@@ -1,0 +1,25 @@
+.App {
+  display: flex;
+  position: relative;
+  margin: 60px;
+  // width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.introContainer {
+  position: fixed;
+  height: 400px;
+  width: 300px;
+  margin-right: 60px;
+  background-color: blue;
+}
+
+.projectsContainer {
+  position: absolute;
+  margin-left: 400px;
+  padding: 24px;
+}
+
+@media screen and (max-width: 767px) {
+}
