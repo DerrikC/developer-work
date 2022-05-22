@@ -11,13 +11,13 @@ export default function MediaCard() {
   return (
     <Card sx={{ maxWidth: 874 }} className="projectsContainer">
       <CardMedia
+        className="image"
         component="img"
         height="auto"
-        width="100%"
         image="/images/placeholder.png"
         alt="placeholder"
       />
-      <CardContent>
+      <CardContent sx={{ padding: 0, marginTop: 2 }}>
         <Typography gutterBottom variant="h5" component="div">
           Lizard
         </Typography>
@@ -26,7 +26,7 @@ export default function MediaCard() {
           species, ranging across all continents except Antarctica
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions sx={{ padding: 0, marginTop: 2 }}>
         <Stack direction="row" spacing={1}>
           <Chip label="Chip Filled" />
           <Chip label="Chip Outlined" variant="outlined" />
