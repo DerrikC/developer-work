@@ -1,6 +1,8 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import Main from "./Components/intro";
-import Projects from "./Components/projects";
+import BottomNav from "./Components/bottomNav";
+import Sidebar from "./Components/sidebar";
+import Main from "./Components/main";
+// import { left } from "@popperjs/core";
 
 const darkTheme = createTheme({
   palette: {
@@ -10,17 +12,19 @@ const darkTheme = createTheme({
     mode: "dark"
   },
   shape: {
-    borderRadius: 6
-  }
+    borderRadius: 10
+  },
+  shadows: "none"
 });
 
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
       <div className="App">
+        <Sidebar />
         <Main />
-        <Projects />
       </div>
+      <BottomNav />
     </ThemeProvider>
   );
 }
