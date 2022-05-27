@@ -68,6 +68,10 @@ body {
   display: none;
 }
 
+.contact {
+  padding-top: 24px;
+}
+
 @media screen and (max-width: $lg) {
   .App {
     display: flex;
@@ -91,7 +95,26 @@ body {
     margin: 0px 60px 60px 0px;
   }
 
-  //   .bottomNav {
-  //     display: block;
-  //   }
+  .bottomNav {
+    display: block;
+    min-width: 350px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    position: -webkit-sticky;
+    position: sticky;
+    border-width: 1px;
+    bottom: 0;
+  }
+
+  .outlineNav {
+    border-style: solid;
+    border-color: #fff;
+    // background: rgba(0, 0, 0, 0.76);
+    // border-radius: 16px;
+    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    // backdrop-filter: blur(5px);
+    // -webkit-backdrop-filter: blur(5px);
+    // border: 1px solid rgba(0, 0, 0, 0.3);
+  }
 }
