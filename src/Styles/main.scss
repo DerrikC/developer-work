@@ -1,34 +1,97 @@
+$lg: 992px;
+$back-color: #000000;
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  background-color: #121212;
+  background-color: $back-color;
+  display: block;
+  //   margin: 50px;
+  //   margin-top: 60px;
 }
 
 .App {
   display: flex;
-  position: relative;
-  margin: 60px;
-  // width: 100vw;
-  height: 100vh;
-  background-color: #121212;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+  margin-top: 60px;
 }
 
 .introContainer {
-  position: fixed;
-  height: 400px;
-  width: 300px;
-  margin-right: 60px;
-  padding: 24px;
-  background-color: blue;
+  margin: 24px;
+  margin-bottom: 0px;
 }
 
 .navContainer {
-  margin-top: 24px;
+  margin: 0px 24px 24px 24px;
+  padding: 16px;
+}
+
+.sideBarContainer {
+  flex: 2;
+}
+
+.sideBar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px;
+  min-height: 450px;
+  min-width: 350px;
+  width: 350px;
+  max-width: 350px;
+}
+
+.main {
+  top: 60px;
+  margin-top: 0px;
 }
 
 .projectsContainer {
-  position: absolute;
-  margin-left: 450px;
-  padding: 40px;
+  width: 100%;
+  min-width: 550px;
+  margin-bottom: 60px;
+  margin: 0px 60px 60px 0px;
 }
 
-@media screen and (max-width: 767px) {
+.description {
+  margin: 0px 30px 0px 30px;
+}
+
+.chips {
+  margin: 0px 36px 36px 36px;
+}
+
+.bottomNav {
+  display: none;
+}
+
+@media screen and (max-width: $lg) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .sideBar {
+    min-height: 180px;
+    min-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .navContainer {
+    display: none;
+  }
+
+  .projectsContainer {
+    min-width: 350px;
+    margin-bottom: 60px;
+    margin: 0px 60px 60px 0px;
+  }
+
+  //   .bottomNav {
+  //     display: block;
+  //   }
 }
