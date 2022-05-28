@@ -1,15 +1,15 @@
 import BottomNav from "../Components/bottomNav";
 import Sidebar from "../Components/sidebar";
-import Main from "../Components/main";
+import About from "../Components/mainAbout";
 
-function About() {
+function pageAbout() {
   return (
     <div className="App">
       <Sidebar />
-      <Main />
+      <About />
       <BottomNav />
     </div>
   );
 }
 
-export default About;
+export default pageAbout;

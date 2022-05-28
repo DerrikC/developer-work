@@ -33,17 +33,17 @@ export default function BasicCard() {
             spacing={2}
             className="buttonContainer"
           >
-            <Link to="/">
+            <Link to="/" className="navButton">
               <Button variant="contained" size="large">
                 Home
               </Button>
             </Link>
-            <Link to="/about">
+            <Link to="/about" className="navButton">
               <Button variant="contained" size="large">
                 About
               </Button>
             </Link>
-            <Link to="/art">
+            <Link to="/art" className="navButton">
               <Button variant="contained" size="large">
                 Art
               </Button>
@@ -52,8 +52,9 @@ export default function BasicCard() {
 
           <Stack
             direction="row"
-            spacing={2}
-            justifyContent="center"
+            // spacing={2}
+            // justifyContent="left"
+            justifyContent="space-between"
             className="iconContainer"
           >
             <a href="https://Linkedin.com" target="_blank" rel="noreferrer">

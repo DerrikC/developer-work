@@ -1,7 +1,7 @@
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import BottomNav from "../Components/bottomNav";
 import Sidebar from "../Components/sidebar";
-import Main from "../Components/main";
+import Art from "../Components/mainArt";
 
 const darkTheme = createTheme({
   palette: {
@@ -16,16 +16,16 @@ const darkTheme = createTheme({
   shadows: "none"
 });
 
-function Art() {
+function pageArt() {
   return (
     <ThemeProvider theme={darkTheme}>
       <div className="App">
         <Sidebar />
-        <Main />
+        <Art />
       </div>
       <BottomNav />
     </ThemeProvider>
   );
 }
 
-export default Art;
+export default pageArt;

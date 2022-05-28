@@ -4,6 +4,7 @@ import App from "./App";
 import "./Styles/main.scss";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
 import About from "./Pages/About";
 import Art from "./Pages/Art";
 
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<About />} />

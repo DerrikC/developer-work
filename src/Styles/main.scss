@@ -1,4 +1,5 @@
 $lg: 992px;
+$text-color: #ffffff;
 $back-color: #000000;
 
 html {
@@ -42,6 +43,18 @@ body {
   min-width: 350px;
   width: 350px;
   max-width: 350px;
+  text-decoration: none;
+}
+
+.navContainer,
+a {
+  text-decoration: none;
+}
+
+.buttonContainer,
+button {
+  width: 100%;
+  justify-content: left !important;
 }
 
 .main {
@@ -53,7 +66,7 @@ body {
   width: 100%;
   min-width: 550px;
   margin-bottom: 60px;
-  margin: 0px 60px 60px 0px;
+  margin: 0px 40px 40px 0px;
 }
 
 .description {
@@ -82,7 +95,8 @@ body {
   .sideBar {
     min-height: 180px;
     min-width: 100%;
-    margin-bottom: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 
   .navContainer {
@@ -92,7 +106,7 @@ body {
   .projectsContainer {
     min-width: 350px;
     margin-bottom: 60px;
-    margin: 0px 60px 60px 0px;
+    margin: 0px 40px 40px 0px;
   }
 
   .bottomNav {
@@ -105,6 +119,10 @@ body {
     position: sticky;
     border-width: 1px;
     bottom: 0;
+  }
+
+  .bottomNav a {
+    margin: 6px;
   }
 
   .outlineNav {

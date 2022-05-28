@@ -28,28 +28,15 @@ export default function MediaCard() {
     <Container className="main">
       <Card variant="outlined" className="projectsContainer">
         <CardActionArea>
-          <CardMedia
-            className="image"
-            component="img"
-            height="auto"
-            image="/images/placeholder.png"
-            alt="placeholder"
-          />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Art
             </Typography>
             <Typography color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
               6,000 species, ranging across all continents except Antarctica
             </Typography>
           </CardContent>
-          <CardActions className="chips">
-            <Stack direction="row" spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
-            </Stack>
-          </CardActions>
         </CardActionArea>
       </Card>
       <Card variant="outlined" className="projectsContainer">
@@ -61,21 +48,6 @@ export default function MediaCard() {
             image="/images/placeholder.png"
             alt="placeholder"
           />
-          <CardContent className="description">
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions className="chips">
-            <Stack direction="row" spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
-            </Stack>
-          </CardActions>
         </CardActionArea>
       </Card>
       <Card variant="outlined" className="projectsContainer">
@@ -87,21 +59,6 @@ export default function MediaCard() {
             image="/images/placeholder.png"
             alt="placeholder"
           />
-          <CardContent className="description">
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
-          <CardActions className="chips">
-            <Stack direction="row" spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
-            </Stack>
-          </CardActions>
         </CardActionArea>
       </Card>
       <Card variant="outlined" className="projectsContainer">
