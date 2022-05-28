@@ -8,6 +8,7 @@ import Container from "@mui/material/Container";
 import { FiDribbble } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function BasicCard() {
   return (
@@ -32,31 +33,44 @@ export default function BasicCard() {
             spacing={2}
             className="buttonContainer"
           >
-            <Button variant="contained" size="large">
-              Home
-            </Button>
-            <Button variant="contained" size="large">
-              About
-            </Button>
-            <Button variant="contained" size="large">
-              Art
-            </Button>
+            <Link to="/">
+              <Button variant="contained" size="large">
+                Home
+              </Button>
+            </Link>
+            <Link to="/about">
+              <Button variant="contained" size="large">
+                About
+              </Button>
+            </Link>
+            <Link to="/art">
+              <Button variant="contained" size="large">
+                Art
+              </Button>
+            </Link>
           </Stack>
+
           <Stack
             direction="row"
             spacing={2}
             justifyContent="center"
             className="iconContainer"
           >
-            <Button variant="contained" size="large">
-              <FaLinkedin size="1.8rem" />
-            </Button>
-            <Button variant="contained" size="large">
-              <BsGithub size="1.8rem" />
-            </Button>
-            <Button variant="contained" size="large">
-              <FiDribbble size="1.8rem" />
-            </Button>
+            <a href="https://Linkedin.com" target="_blank" rel="noreferrer">
+              <Button variant="contained" size="large">
+                <FaLinkedin size="1.5rem" />
+              </Button>
+            </a>
+            <a href="https://Github.com" target="_blank" rel="noreferrer">
+              <Button variant="contained" size="large">
+                <BsGithub size="1.5rem" />
+              </Button>
+            </a>
+            <a href="https://Dribbble.com" target="_blank" rel="noreferrer">
+              <Button variant="contained" size="large">
+                <FiDribbble size="1.5rem" />
+              </Button>
+            </a>
           </Stack>
         </CardContent>
       </Card>

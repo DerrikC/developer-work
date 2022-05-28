@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import BottomNavigation from "@mui/material/BottomNavigation";
 import BottomNavigationAction from "@mui/material/BottomNavigationAction";
+import { Link } from "react-router-dom";
+import Button from "@mui/material/Button";
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
@@ -17,9 +19,21 @@ export default function SimpleBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Home" />
-          <BottomNavigationAction label="About" />
-          <BottomNavigationAction label="Art" />
+          <Link to="/">
+            <Button variant="contained" size="large">
+              Home
+            </Button>
+          </Link>
+          <Link to="/About">
+            <Button variant="contained" size="large">
+              About
+            </Button>
+          </Link>
+          <Link to="/Art">
+            <Button variant="contained" size="large">
+              Art
+            </Button>
+          </Link>
         </BottomNavigation>
       </Card>
     </Box>
