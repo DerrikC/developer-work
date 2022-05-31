@@ -1,4 +1,5 @@
 $lg: 992px;
+$sm: 576px;
 $text-color: #fff;
 $back-color: #000;
 
@@ -65,8 +66,8 @@ a {
 
 .projectsContainer {
   width: 100%;
-  min-width: 550px;
-  margin-bottom: 50px;
+  min-width: 200px;
+  margin-bottom: 40px;
 }
 
 .description {
@@ -138,40 +139,47 @@ button {
   }
 
   .projectsContainer {
-    min-width: 350px;
+    width: 100%;
     margin: 40px 40px 40px 0px;
   }
 
   .bottomNav {
     display: block;
-    min-width: 350px;
-    max-width: 90%;
-    margin: 0 auto;
+    width: 100%;
     padding-bottom: 50px;
     position: -webkit-sticky;
     position: sticky;
-    border-width: 1px;
     bottom: 0;
   }
 
   .outlineNav {
-    display: flex;
-    justify-content: space-around;
     transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     border-style: solid;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
-    background: rgba(18, 18, 18, 0.91);
+    // background: rgba(18, 18, 18, 0.91);
     border-radius: 30px;
     border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .backNav button {
-    border-radius: 26px;
-    // width: 100%;
-    // max-width: 200px;
+  .outlineNav .pill {
+    border-radius: 30px;
     margin: 6px;
+  }
+
+  .backNav {
+    // width: 100%;
+  }
+
+  .outlineNav button {
+    // display: flex;
+    // width: 100%;
+    // border-radius: 26px;
+    // margin: 6px;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
   }
 }
 
@@ -181,3 +189,13 @@ button {
 // backdrop-filter: blur(5px);
 // -webkit-backdrop-filter: blur(5px);
 // border: 1px solid rgba(37, 37, 37, 0.22);
+
+@media screen and (max-width: $sm) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    margin-top: 30px;
+  }
+}

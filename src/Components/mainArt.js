@@ -22,15 +22,16 @@ export default function MediaCard() {
     <Container className="main">
       <Card variant="outlined" className="projectsContainer">
         <CardContent className="description">
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography sx={{ pt: 2 }} gutterBottom variant="h5" component="div">
             Art
           </Typography>
-          <Typography color="text.secondary">
+          <Typography sx={{ pb: 2 }} color="text.secondary">
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
         </CardContent>
       </Card>
+
       <Card variant="outlined" className="projectsContainer">
         <CardMedia
           className="image"

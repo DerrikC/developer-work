@@ -34,7 +34,7 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Project 1
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -58,7 +58,7 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Project 2
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
@@ -82,7 +82,7 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              Project 3
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
               Lizards are a widespread group of squamate reptiles, with over
