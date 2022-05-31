@@ -34,7 +34,7 @@ export default function ContactCard() {
           <Button variant="contained" size="large">
             Email Me
           </Button>
-          <Button
+          {/* <Button
             variant="contained"
             aria-owns={open ? "mouse-over-popover" : undefined}
             aria-haspopup="true"
@@ -42,8 +42,8 @@ export default function ContactCard() {
             onMouseLeave={handlePopoverClose}
           >
             <FiCopy size="1.5rem" />
-          </Button>
-          <Popover
+          </Button> */}
+          {/* <Popover
             id="mouse-over-popover"
             sx={{
               pointerEvents: "none"
@@ -63,7 +63,7 @@ export default function ContactCard() {
             disableRestoreFocus
           >
             <Typography sx={{ p: 1 }}>Copy Email Address</Typography>
-          </Popover>
+          </Popover> */}
         </Stack>
       </CardContent>
     </Card>

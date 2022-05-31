@@ -44,7 +44,6 @@ export default function ElevateAppBar(props) {
             <Toolbar>
               <Link to="/">
                 <IconButton
-                  sx={{ mr: 4 }}
                   component={Link}
                   to="/"
                   className="headerBack"
@@ -53,7 +52,12 @@ export default function ElevateAppBar(props) {
                   <ArrowBackIcon />
                 </IconButton>
               </Link>
-              <Typography className="title" variant="h6" component="div">
+              <Typography
+                sx={{ ml: 4 }}
+                className="title"
+                variant="h6"
+                component="div"
+              >
                 Project Name
               </Typography>
             </Toolbar>
@@ -69,17 +73,7 @@ export default function ElevateAppBar(props) {
             image="/images/placeholder_2.png"
             alt="placeholder"
           />
-          <Card variant="outlined" className="projectsContainer">
-            <CardContent className="description">
-              <Typography gutterBottom variant="h5" component="div">
-                Details
-              </Typography>
-              <Typography color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </Card>
+
           <Stack spacing={2} sx={{ width: "100%" }}>
             <Button color="secondary" sx={{ mb: 5 }} variant="outlined">
               View Prototype
