@@ -52,9 +52,9 @@ export default function BasicCard() {
 
           <Stack
             direction="row"
-            // spacing={2}
+            // spacing={1}
             // justifyContent="left"
-            justifyContent="space-between"
+            justifyContent="space-around"
             className="iconContainer"
           >
             <a href="https://Linkedin.com" target="_blank" rel="noreferrer">

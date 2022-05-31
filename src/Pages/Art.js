@@ -1,30 +1,17 @@
-import { ThemeProvider, createTheme } from "@mui/material/styles";
 import BottomNav from "../Components/bottomNav";
 import Sidebar from "../Components/sidebar";
 import Art from "../Components/mainArt";
-
-const darkTheme = createTheme({
-  palette: {
-    primary: {
-      main: "#424242"
-    },
-    mode: "dark"
-  },
-  shape: {
-    borderRadius: 10
-  },
-  shadows: "none"
-});
+import Container from "@mui/material/Container";
 
 function pageArt() {
   return (
-    <ThemeProvider theme={darkTheme}>
+    <Container>
       <div className="App">
         <Sidebar />
         <Art />
       </div>
       <BottomNav />
-    </ThemeProvider>
+    </Container>
   );
 }
 

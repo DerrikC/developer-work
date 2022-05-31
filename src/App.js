@@ -2,8 +2,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import BottomNav from "./Components/bottomNav";
 import Sidebar from "./Components/sidebar";
 import Main from "./Components/main";
-
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Container from "@mui/material/Container";
 
 const darkTheme = createTheme({
   palette: {
@@ -20,15 +19,15 @@ const darkTheme = createTheme({
 
 function App() {
   return (
-    // <Router>
     <ThemeProvider theme={darkTheme}>
-      <div className="App">
-        <Sidebar />
-        <Main />
-      </div>
-      <BottomNav />
+      <Container>
+        <div className="App">
+          <Sidebar />
+          <Main />
+        </div>
+        <BottomNav />
+      </Container>
     </ThemeProvider>
-    // </Router>
   );
 }
 
