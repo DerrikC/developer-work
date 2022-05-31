@@ -3,22 +3,40 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./Styles/main.scss";
 import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./Components/ScrollToTop";
 import About from "./Pages/About";
 import Art from "./Pages/Art";
+import Page from "./Pages/projectPage";
+
+const darkTheme = createTheme({
+  palette: {
+    primary: {
+      main: "#424242"
+    },
+    mode: "dark"
+  },
+  shape: {
+    borderRadius: 12
+  },
+  shadows: "none"
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/art" element={<Art />} />
-      </Routes>
-    </Router>
+    <ThemeProvider theme={darkTheme}>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/art" element={<Art />} />
+          <Route path="/projectPage" element={<Page />} />
+        </Routes>
+      </Router>
+    </ThemeProvider>
     {/* <App /> */}
   </React.StrictMode>
 );

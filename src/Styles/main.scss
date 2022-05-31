@@ -1,6 +1,11 @@
 $lg: 992px;
-$text-color: #ffffff;
-$back-color: #000000;
+$text-color: #fff;
+$back-color: #000;
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   -webkit-text-size-adjust: 100%;
@@ -9,8 +14,6 @@ html {
 body {
   background-color: $back-color;
   display: block;
-  //   margin: 50px;
-  //   margin-top: 60px;
 }
 
 .App {
@@ -24,6 +27,10 @@ body {
 .introContainer {
   margin: 24px;
   margin-bottom: 0px;
+}
+
+.intro {
+  display: none;
 }
 
 .navContainer {
@@ -51,12 +58,6 @@ a {
   text-decoration: none;
 }
 
-.buttonContainer,
-button {
-  width: 100%;
-  justify-content: left !important;
-}
-
 .main {
   top: 60px;
   margin-top: 0px;
@@ -65,16 +66,16 @@ button {
 .projectsContainer {
   width: 100%;
   min-width: 550px;
-  margin-bottom: 60px;
-  margin: 0px 40px 40px 0px;
+  margin-bottom: 50px;
 }
 
 .description {
   margin: 0px 30px 0px 30px;
 }
 
-.chips {
-  margin: 0px 36px 36px 36px;
+.sideBar,
+button {
+  width: 100%;
 }
 
 .bottomNav {
@@ -85,6 +86,37 @@ button {
   padding-top: 24px;
 }
 
+.projectMain {
+  max-width: 600px;
+  width: 600px;
+  min-width: 350px;
+}
+
+// .topNav {
+// }
+
+.headerBack {
+  justify-content: center;
+  float: left;
+}
+
+.title {
+  object-fit: contain;
+}
+
+.topNav {
+  // align-items: center;
+  box-sizing: border-box;
+  z-index: 1100;
+  transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(24px);
+  border-style: solid;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-width: 0px 0px thin;
+  background: rgba(18, 18, 18, 0.91);
+}
+
 @media screen and (max-width: $lg) {
   .App {
     display: flex;
@@ -92,11 +124,13 @@ button {
     margin-top: 20px;
   }
 
-  .sideBar {
-    min-height: 180px;
-    min-width: 100%;
-    margin-top: 40px;
+  .intro {
+    display: block;
     margin-bottom: 40px;
+  }
+
+  .sideBar {
+    display: none;
   }
 
   .navContainer {
@@ -105,14 +139,13 @@ button {
 
   .projectsContainer {
     min-width: 350px;
-    margin-bottom: 60px;
-    margin: 0px 40px 40px 0px;
+    margin: 40px 40px 40px 0px;
   }
 
   .bottomNav {
     display: block;
     min-width: 350px;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     padding-bottom: 50px;
     position: -webkit-sticky;
@@ -121,18 +154,30 @@ button {
     bottom: 0;
   }
 
-  .bottomNav a {
-    margin: 6px;
+  .outlineNav {
+    display: flex;
+    justify-content: space-around;
+    transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-style: solid;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background: rgba(18, 18, 18, 0.91);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
   }
 
-  .outlineNav {
-    border-style: solid;
-    border-color: #fff;
-    // background: rgba(0, 0, 0, 0.76);
-    // border-radius: 16px;
-    // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    // backdrop-filter: blur(5px);
-    // -webkit-backdrop-filter: blur(5px);
-    // border: 1px solid rgba(0, 0, 0, 0.3);
+  .backNav button {
+    border-radius: 26px;
+    // width: 100%;
+    // max-width: 200px;
+    margin: 6px;
   }
 }
+
+// background: rgba(37, 37, 37, 0.96);
+// border-radius: 26px;
+// box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+// backdrop-filter: blur(5px);
+// -webkit-backdrop-filter: blur(5px);
+// border: 1px solid rgba(37, 37, 37, 0.22);

@@ -1,14 +1,17 @@
 import BottomNav from "../Components/bottomNav";
 import Sidebar from "../Components/sidebar";
 import About from "../Components/mainAbout";
+import Container from "@mui/material/Container";
 
 function pageAbout() {
   return (
-    <div className="App">
-      <Sidebar />
-      <About />
+    <Container>
+      <div className="App">
+        <Sidebar />
+        <About />
+      </div>
       <BottomNav />
-    </div>
+    </Container>
   );
 }
 
