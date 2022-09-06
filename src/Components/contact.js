@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import { FiCopy } from "react-icons/fi";
+import { FiMail } from "react-icons/fi";
 import Popover from "@mui/material/Popover";
 
 export default function ContactCard() {
@@ -12,7 +12,7 @@ export default function ContactCard() {
 
   const open = Boolean(anchorEl);
 
-  const handlePopoverOpen = event => {
+  const handlePopoverOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -27,12 +27,20 @@ export default function ContactCard() {
           Get in Touch
         </Typography>
         <Typography color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          I’m happy to meet and chat, don’t hesitate to reach out!
         </Typography>
         <Stack className="contact" direction="row" spacing={2}>
-          <Button variant="contained" size="large">
+          <Button
+            variant="contained"
+            size="large"
+            style={{
+              justifyContent: "space-between",
+              minWidth: "200px",
+              maxWidth: "200px",
+            }}
+          >
             Email Me
+            <FiMail size="1.5rem" />
           </Button>
           {/* <Button
             variant="contained"
