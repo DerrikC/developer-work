@@ -13,7 +13,7 @@ import Contact from "../Components/contact";
 export default function MediaCard() {
   return (
     <Container className="main">
-      <Card sx={{ mt: 5 }} variant="outlined" className="intro">
+      <Card variant="outlined" className="intro">
         <CardContent className="description">
           <Typography sx={{ mt: 2 }} gutterBottom variant="h5" component="div">
             Derrik Campbell
@@ -34,15 +34,43 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Project 1
+              Algonquin First Nation Site
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              A redesign concept I did for my First Nation community in Mattawa
+              Ontario.
             </Typography>
             <Stack direction="row" sx={{ mb: 2 }} spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
+              <Chip label="HTML" variant="outlined" />
+              <Chip label="CSS" variant="outlined" />
+              <Chip label="LIQUID" variant="outlined" />
+              <Chip label="UX DESIGN" variant="outlined" />
+            </Stack>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+
+      <Card variant="outlined" className="projectsContainer">
+        <CardActionArea component={RouterLink} to="/projectPage">
+          <CardMedia
+            className="image"
+            component="img"
+            height="auto"
+            image="/images/placeholder.png"
+            alt="placeholder"
+          />
+          <CardContent className="description">
+            <Typography gutterBottom variant="h5" component="div">
+              Elections Canada Login Authentication
+            </Typography>
+            <Typography sx={{ mb: 2 }} color="text.secondary">
+              Concept voting application for elections Canada.
+            </Typography>
+            <Stack direction="row" sx={{ mb: 2 }} spacing={2}>
+              <Chip label="SCSS" variant="outlined" />
+              <Chip label="REACT.JS" variant="outlined" />
+              <Chip label="API" variant="outlined" />
+              <Chip label="UX DESIGN" variant="outlined" />
             </Stack>
           </CardContent>
         </CardActionArea>
@@ -58,15 +86,16 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Project 2
+              Crypto Tracker
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              A responsive crypto currency price tracking application.
             </Typography>
             <Stack direction="row" sx={{ mb: 2 }} spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
+              <Chip label="HTML" variant="outlined" />
+              <Chip label="SCSS" variant="outlined" />
+              <Chip label="REACT.JS" variant="outlined" />
+              <Chip label="API" variant="outlined" />
             </Stack>
           </CardContent>
         </CardActionArea>
@@ -82,15 +111,17 @@ export default function MediaCard() {
           />
           <CardContent className="description">
             <Typography gutterBottom variant="h5" component="div">
-              Project 3
+              Western CREVAWC
             </Typography>
             <Typography sx={{ mb: 2 }} color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Developed and supported the maintenance of content on 7 different
+              sites for departments within the Faculty of Education.
             </Typography>
             <Stack direction="row" sx={{ mb: 2 }} spacing={2}>
-              <Chip label="Chip Filled" />
-              <Chip label="Chip Outlined" variant="outlined" />
+              <Chip label="CMS" variant="outlined" />
+              <Chip label="HTML" variant="outlined" />
+              <Chip label="CSS" variant="outlined" />
+              <Chip label="ADOBE SUITE" variant="outlined" />
             </Stack>
           </CardContent>
         </CardActionArea>

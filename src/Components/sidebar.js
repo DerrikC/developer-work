@@ -13,11 +13,7 @@ import { Link } from "react-router-dom";
 export default function BasicCard() {
   return (
     <Container className="sideBarContainer">
-      <Card
-        variant="outlined"
-        // sx={{ minWidth: 350, maxWidth: 350 }}
-        className="sideBar"
-      >
+      <Card variant="outlined" className="sideBar">
         <CardContent className="introContainer">
           <Typography sx={{ fontSize: 24 }} color="text.primary" gutterBottom>
             Derrik Campbell
@@ -34,17 +30,35 @@ export default function BasicCard() {
             className="buttonContainer"
           >
             <Link to="/" className="navButton">
-              <Button variant="contained" size="large">
-                Home
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  justifyContent: "left",
+                }}
+              >
+                Work
               </Button>
             </Link>
             <Link to="/about" className="navButton">
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  justifyContent: "left",
+                }}
+              >
                 About
               </Button>
             </Link>
             <Link to="/art" className="navButton">
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                size="large"
+                style={{
+                  justifyContent: "left",
+                }}
+              >
                 Art
               </Button>
             </Link>
@@ -52,23 +66,46 @@ export default function BasicCard() {
 
           <Stack
             direction="row"
-            // spacing={1}
-            // justifyContent="left"
-            justifyContent="space-around"
+            spacing={1.8}
+            justifyContent="space-between"
             className="iconContainer"
           >
             <a href="https://Linkedin.com" target="_blank" rel="noreferrer">
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                style={{
+                  maxWidth: "80px",
+                  maxHeight: "42px",
+                  minWidth: "80px",
+                  minHeight: "42px",
+                }}
+              >
                 <FaLinkedin size="1.5rem" />
               </Button>
             </a>
             <a href="https://Github.com" target="_blank" rel="noreferrer">
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                style={{
+                  maxWidth: "80px",
+                  maxHeight: "42px",
+                  minWidth: "80px",
+                  minHeight: "42px",
+                }}
+              >
                 <BsGithub size="1.5rem" />
               </Button>
             </a>
             <a href="https://Dribbble.com" target="_blank" rel="noreferrer">
-              <Button variant="contained" size="large">
+              <Button
+                variant="contained"
+                style={{
+                  maxWidth: "80px",
+                  maxHeight: "42px",
+                  minWidth: "80px",
+                  minHeight: "42px",
+                }}
+              >
                 <FiDribbble size="1.5rem" />
               </Button>
             </a>

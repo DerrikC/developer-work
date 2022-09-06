@@ -26,11 +26,11 @@ function ElevationScroll(props) {
   const trigger = useScrollTrigger({
     disableHysteresis: true,
     threshold: 0,
-    target: window ? window() : undefined
+    target: window ? window() : undefined,
   });
 
   return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0
+    elevation: trigger ? 4 : 0,
   });
 }
 
@@ -41,17 +41,29 @@ export default function ElevateAppBar(props) {
         <CssBaseline />
         <ElevationScroll {...props}>
           <AppBar className="topNav">
-            <Toolbar>
-              <Link to="/">
-                <IconButton
-                  component={Link}
-                  to="/"
-                  className="headerBack"
-                  aria-label="back to home"
-                >
-                  <ArrowBackIcon />
-                </IconButton>
-              </Link>
+            <Link
+              to="/"
+              style={{
+                display: "flex",
+                position: "absolute",
+                zIndex: "1000",
+                margin: "12px",
+              }}
+            >
+              <IconButton
+                component={Link}
+                to="/"
+                className="headerBack"
+                aria-label="back to home"
+              >
+                <ArrowBackIcon />
+              </IconButton>
+            </Link>
+            <Toolbar
+              style={{
+                justifyContent: "center",
+              }}
+            >
               <Typography
                 sx={{ ml: 4 }}
                 className="title"
@@ -100,10 +112,10 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
           >
             <Button variant="contained" size="large">
               <ArrowBackIcon sx={{ mr: 2 }} />
-              Last Project
+              Previous
             </Button>
             <Button variant="contained">
-              Next Project <ArrowForwardIcon sx={{ ml: 2 }} />
+              Next <ArrowForwardIcon sx={{ ml: 2 }} />
             </Button>
           </Stack>
         </Container>

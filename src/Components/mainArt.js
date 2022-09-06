@@ -26,8 +26,9 @@ export default function MediaCard() {
             Art
           </Typography>
           <Typography sx={{ pb: 2 }} color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            In my spare time, I create sketches, acrylic paintings, and digital
+            paintings. I am constantly learning new techniques and trying to
+            apply my illustrations to practical design.
           </Typography>
         </CardContent>
       </Card>

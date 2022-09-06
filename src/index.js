@@ -9,6 +9,7 @@ import ScrollToTop from "./Components/ScrollToTop";
 import About from "./Pages/About";
 import Art from "./Pages/Art";
 import Page from "./Pages/projectPage";
+// import BackVideo from "./Components/video";
 
 const darkTheme = createTheme({
   palette: {
@@ -26,6 +27,7 @@ const darkTheme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    {/* <BackVideo /> */}
     <ThemeProvider theme={darkTheme}>
       <Router>
         <ScrollToTop />
